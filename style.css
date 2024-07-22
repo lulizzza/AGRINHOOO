@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocoricó</title>
-    <style>
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -43,73 +37,3 @@
             flex: 1;
             margin: 10px;
         }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>COCORICÓ</h1>
-    </header>
-    <nav>
-        <a href="#inicio">INÍCIO</a>
-        <a href="#flores">FLORES</a>
-        <a href="#tecnicas">TÉCNICAS DE PLANTAÇÃO</a>
-    </nav>
-    <div class="container">
-        <section id="inicio" class="section">
-            <h2>INÍCIO</h2>
-            <p>Texto falando sobre o site bla bla bla bla</p>
-            <img src="tractor.jpg" alt="Trator">
-        </section>
-        <section id="flores" class="section">
-            <h2>FLORES</h2>
-            <div class="image-container">
-                <div>
-                    <h3>Tulipas</h3>
-                    <p>ai q não sei o q não sei o q lá</p>
-                    <img src="tulips.jpg" alt="Tulipas">
-                </div>
-                <div>
-                    <h3>Rosa</h3>
-                    <p>ai q não sei o q não sei o q lá</p>
-                    <img src="rose.jpg" alt="Rosas">
-                </div>
-                <div>
-                    <h3>Girassol</h3>
-                    <p>ai q não sei o q não sei o q lá</p>
-                    <img src="sunflower.jpg" alt="Girassol">
-                </div>
-                <div>
-                    <h3>Orquídeas</h3>
-                    <p>ai q não sei o q não sei o q lá</p>
-                    <img src="orchids.jpg" alt="Orquídeas">
-                </div>
-            </div>
-        </section>
-        <section id="tecnicas" class="section">
-            <h2>TÉCNICAS DE PLANTAÇÃO</h2>
-            <div class="image-container">
-                <div>
-                    <h3>Tomate</h3>
-                    <p>não sei o q não sei o q lá</p>
-                    <img src="tomato.jpg" alt="Tomate">
-                </div>
-                <div>
-                    <h3>Manjericão</h3>
-                    <p>não sei o q não sei o q lá</p>
-                    <img src="basil.jpg" alt="Manjericão">
-                </div>
-                <div>
-                    <h3>Alface</h3>
-                    <p>não sei o q não sei o q lá</p>
-                    <img src="lettuce.jpg" alt="Alface">
-                </div>
-                <div>
-                    <h3>Cenoura</h3>
-                    <p>não sei o q não sei o q lá</p>
-                    <img src="carrot.jpg" alt="Cenoura">
-                </div>
-            </div>
-        </section>
-    </div>
-</body>
-</html>
