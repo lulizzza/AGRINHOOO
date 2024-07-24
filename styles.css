@@ -17,7 +17,7 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: #6eb659;
+    background-color: #5bca73;
 }
 nav a {
     color: white;
