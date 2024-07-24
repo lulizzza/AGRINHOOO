@@ -27,7 +27,7 @@ nav a {
 }
 nav a:hover {
     background-color: #48c580;
-    color: black;
+    color: rgb(83, 172, 94);
 }
 .content {
     padding: 20px;
