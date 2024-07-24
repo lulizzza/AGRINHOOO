@@ -1,140 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocoricó</title>
+    <title>Site Responsivo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
         header {
-            background-color: #8FB88F;
-            color: #000;
-            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
             text-align: center;
         }
         nav {
-            background-color: #8FB88F;
-            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
         }
         nav a {
-            margin: 0 15px;
+            color: white;
+            padding: 14px 20px;
             text-decoration: none;
-            color: #000;
+            text-align: center;
         }
-        .container {
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
             padding: 20px;
         }
-        .section {
-            margin-bottom: 40px;
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .image-container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .image-container img {
-            flex: 1;
-            margin: 10px;
+        /* Media Queries para responsividade */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>COCORICÓ</h1>
+        <h1>Meu Site Responsivo</h1>
     </header>
     <nav>
-        <a href="#inicio">INÍCIO</a>
-        <a href="#flores">FLORES</a>
-        <a href="#tecnicas">TÉCNICAS DE PLANTAÇÃO</a>
+        <a href="index.html">Home</a>
+        <a href="1.html">Sobre</a>
+        <a href="2.html">Serviços</a>
+        <a href="3.html">Contato</a>
     </nav>
     <div class="container">
-        <section id="inicio" class="section">
-            <h2>INÍCIO</h2>
-            <h1>Bem-vindo ao cocoricó</h1>
-
-                 <p>Nosso site oferece uma ampla gama de recursos e informações detalhadas para entusiastas de jardinagem de todos os níveis de experiência, nosso objetivo é capacitar você a criar e manter espaços verdes deslumbrantes.
-
-                Explore nossos artigos detalhados que abrangem o preparo do solo até técnicas de propagação de plantas. Descubra como selecionar as melhores plantas para o seu clima e ambiente, além de aprender sobre os cuidados ideais para diferentes tipos de plantas, desde flores exóticas até vegetais orgânicos.
-                
-
-            
-                Não importa se você está começando do zero ou buscando aprimorar suas habilidades, o grupo cocoricó está aqui para ajudá-lo a transformar seu espaço exterior em um um lugar mais belo. Explore nosso site hoje mesmo e comece sua jornada para se tornar um mestre da jardinagem!
-                
-                
-                
-                </p>
-            <img src="Planta-jovem-luz-solar.jpg" alt="plantinha">
-        </section>
-        <section id="flores" class="section">
-            <h2>FLORES</h2>
-            <div class="image-container">
-                <div>
-                    <h3>Tulipas</h3>
-                    <p>Para plantar e cuidar de tulipas, é essencial seguir algumas etapas importantes. Primeiramente, escolha um local com solo bem drenado e exposição ao sol direto ou parcial. Plante os bulbos no outono, com cerca de 10-15 centímetros de profundidade e espaçados por aproximadamente 10 centímetros. Certifique-se de que o solo esteja bem preparado, misturando composto orgânico para garantir boa fertilidade. Durante o crescimento, mantenha o solo úmido, mas não encharcado, especialmente durante períodos de crescimento ativo. Após o florescimento, remova as flores murchas para promover a energia da planta para o próximo ciclo de crescimento. No verão, quando as folhas secarem, você pode cortá-las e armazenar os bulbos em local fresco e seco até o próximo outono, quando deverão ser replantados.
-
-
-
-
-                    </p>
-                    <img src="tulipa-dicas-cuidados-plantio.avif" alt="Tulipas">
-                </div>
-                <div>
-                    <h3>Rosa</h3>
-                    <p>Para plantar e cuidar de rosas, é fundamental escolher um local bem iluminado, com pelo menos seis horas de sol direto por dia. Prepare o solo adicionando composto orgânico para melhorar a fertilidade e a drenagem. Cave um buraco grande o suficiente para acomodar as raízes da rosa e plante-a de modo que o enxerto (a área onde o caule se junta às raízes) fique cerca de 2-3 centímetros abaixo da superfície do solo. Regue abundantemente após o plantio e mantenha o solo úmido durante os primeiros meses para ajudar no estabelecimento das raízes. Para cuidar das rosas, mantenha o solo levemente úmido durante a estação de crescimento, evitando molhar as folhas para prevenir doenças. Fertilize a cada primavera com adubo balanceado para promover um crescimento saudável e uma floração exuberante. Remova flores murchas regularmente para incentivar novas florações.</p>
-                    <img src="Rosa-sp-10.jpg" alt="Rosas">
-                </div>
-                <div>
-                    <h3>Girassol</h3>
-                    <p>Para plantar e cuidar de girassóis, escolha um local ensolarado com solo bem drenado. Plante as sementes diretamente no solo após o último risco de geada, em uma profundidade de cerca de 2-3 centímetros e espaçadas entre 30 a 60 centímetros, dependendo da variedade. Mantenha o solo úmido durante a fase inicial de crescimento, regando regularmente, mas evitando encharcar. Após o florescimento, mantenha a rega para prolongar a vida útil da flor. Quando as cabeças das sementes amadurecerem, proteja-as de pássaros cobrindo com uma rede. Girassóis são plantas resistentes que requerem pouca manutenção além de cuidados básicos de água e nutrientes, e proporcionam uma bela adição ao jardim com suas grandes flores amarelas que seguem o movimento do sol ao longo do dia.
-
-
-
-                    </p>
-                    <img src="Girassol.jpg" alt="Girassol">
-                </div>
-                <div>
-                    <h3>Orquídeas</h3>
-                    <p>Escolha um vaso com drenagem adequada e um substrato específico para orquídeas, como casca de pinheiro ou musgo sphagnum. Certifique-se de que as raízes estejam bem posicionadas no vaso, com espaço suficiente para respirar. As orquídeas preferem luz indireta e podem prosperar em locais com luz filtrada ou sombra parcial. Regue com moderação, permitindo que o substrato seque entre as regas para evitar o apodrecimento das raízes. Fertilize com um adubo específico para orquídeas, diluído e aplicado com cuidado durante os períodos de crescimento ativo. Mantenha um ambiente com boa circulação de ar para evitar o acúmulo de umidade ao redor das folhas e flores.</p>
-                    <img src="orquidea azul.jpg" alt="Orquídeas">
-                </div>
-            </div>
-        </section>
-        <section id="tecnicas" class="section">
-            <h2>TÉCNICAS DE PLANTAÇÃO</h2>
-            <div class="image-container">
-                <div>
-                    <h3>Tomate</h3>
-                    <p>Plante as mudas ou sementes após o risco de geada ter passado, em covas espaçadas de 45 a 60 centímetros e profundas o suficiente para cobrir parcialmente o caule. Regue regularmente, mantendo o solo úmido, mas não encharcado. Utilize estacas ou gaiolas para suporte das plantas à medida que crescem, facilitando o acesso à luz e evitando que os frutos toquem o solo. Fertilize com um adubo balanceado rico em nitrogênio, fósforo e potássio para promover um crescimento saudável e uma boa produção de frutos. Remova as folhas inferiores conforme a planta cresce para melhor circulação de ar e prevenção de doenças. Mantenha o jardim livre de ervas daninhas e pragas, inspecionando regularmente as plantas.
-
-
-
-                    </p>
-                    <img src="tomato gang.jpg" alt="Tomate">
-                </div>
-                <div>
-                    <h3>Manjericão</h3>
-                    <p>Escolha um local ensolarado com solo bem drenado e rico em matéria orgânica. Plante as mudas ou sementes após a última geada, espaçando-as cerca de 20-30 centímetros de distância. Mantenha o solo levemente úmido, regando regularmente, mas evite encharcar. Manjericão beneficia-se de uma fertilização leve com adubo orgânico durante o crescimento. Para promover um crescimento exuberante, pode-se pinçar as pontas das hastes para incentivar o crescimento lateral e uma planta mais cheia. Remova regularmente as flores para direcionar a energia da planta para as folhas, que são as partes mais utilizadas culinariamente. Proteja as plantas de geadas tardias e de temperaturas extremas.</p>
-                    <img src="manjericao.jpg" alt="Manjericão">
-                </div>
-                <div>
-                    <h3>Alface</h3>
-                    <p>Escolha um local com solo bem drenado e rico em matéria orgânica. Plante as sementes ou mudas em fileiras espaçadas cerca de 25-30 centímetros, em um local que receba sol direto ou sombra parcial. Mantenha o solo uniformemente úmido, regando regularmente para evitar que a terra seque completamente. Fertilize a cada duas semanas com um adubo balanceado para promover um crescimento saudável das folhas. Ao crescer, monitore a planta para remover ervas daninhas e evitar pragas. Se necessário, use coberturas de linha para proteger contra insetos. Colha as folhas externas à medida que crescem para incentivar a produção contínua e evitar que a planta floresça, o que pode resultar em sabor amargo.</p>
-                    <img src="alface-crespa-organica.jpg" alt="Alface">
-                </div>
-                <div>
-                    <h3>Cenoura</h3>
-                    <p>Escolha um local ensolarado com solo leve, solto e bem drenado. Prepare o solo removendo pedras e quebrando torrões para facilitar o crescimento das raízes. Plante as sementes diretamente no solo, espaçadas cerca de 5-7 centímetros e com uma profundidade de 1-2 centímetros. Mantenha o solo levemente úmido durante todo o período de crescimento, regando regularmente para evitar que a terra seque completamente. Uma cobertura de palha pode ajudar a manter a umidade e proteger as raízes das cenouras. Fertilize com um adubo balanceado durante o crescimento para promover raízes saudáveis e um bom desenvolvimento das cenouras.Colha as cenouras quando estiverem maduras, normalmente entre 60 a 80 dias após o plantio, puxando suavemente as raízes para fora do solo.</p>
-                    <img src="cenoura fininha.jpg" alt="Cenoura">
-                </div>
-            </div>
-        </section>
+        <div class="content">
+            <h2>Bem-vindo ao Meu Site</h2>
+            <p>Este é um exemplo de site simples e responsivo utilizando HTML e CSS.</p>
+        </div>
     </div>
+    <footer>
+        <p>© 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
