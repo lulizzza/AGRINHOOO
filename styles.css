@@ -13,7 +13,16 @@ header {
     background-color: #4CAF50;
     color: white;
     padding: 15px 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
+}
+header .logo img {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-right: 20px;
+}
+header h1 {
+    margin: 0;
 }
 nav {
     display: flex;
@@ -38,8 +47,11 @@ nav a:hover {
     justify-content: space-between;
     padding: 20px 0;
 }
-.image-row img {
+.image-row a {
     width: 30%;
+}
+.image-row img {
+    width: 100%;
     height: auto;
 }
 .text-above,
@@ -68,8 +80,14 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    .image-row img {
+    .image-row a {
         width: 80%;
         margin-bottom: 20px;
+    }
+    header {
+        flex-direction: column;
+    }
+    header .logo {
+        margin-bottom: 10px;
     }
 }
