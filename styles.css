@@ -18,15 +18,12 @@ header {
     color: white;
     padding: 15px 0;
     display: flex;
-    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Alinha o conteúdo verticalmente */
 }
 header .logo img {
-    width: 50px; /* Ajuste o tamanho conforme necessário */
+    width: 100px; /* Ajuste o tamanho conforme necessário */
     height: auto;
-    margin-right: 20px;
-}
-header h1 {
-    margin: 0;
 }
 nav {
     display: flex;
@@ -57,6 +54,12 @@ nav a:hover {
 .image-row img {
     width: 100%;
     height: auto;
+}
+.center-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Adiciona um espaçamento em torno da imagem */
 }
 .text-above,
 .text-below {
