@@ -2,22 +2,36 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: url('fundo.jpg') no-repeat center center fixed; /* Adiciona a imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente para legibilidade */
+    border-radius: 10px; /* Borda arredondada para a div container */
 }
 header {
-    background-color: #48a76f;
+    background-color: #4CAF50;
     color: white;
     padding: 15px 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
+}
+header .logo img {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-right: 20px;
+}
+header h1 {
+    margin: 0;
 }
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: #5bca73;
+    background-color: #333;
 }
 nav a {
     color: white;
@@ -26,8 +40,8 @@ nav a {
     text-align: center;
 }
 nav a:hover {
-    background-color: #48c580;
-    color: rgb(83, 172, 94);
+    background-color: #ddd;
+    color: black;
 }
 .content {
     padding: 20px;
@@ -37,8 +51,11 @@ nav a:hover {
     justify-content: space-between;
     padding: 20px 0;
 }
-.image-row img {
+.image-row a {
     width: 30%;
+}
+.image-row img {
+    width: 100%;
     height: auto;
 }
 .text-above,
@@ -67,8 +84,14 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    .image-row img {
+    .image-row a {
         width: 80%;
         margin-bottom: 20px;
+    }
+    header {
+        flex-direction: column;
+    }
+    header .logo {
+        margin-bottom: 10px;
     }
 }
