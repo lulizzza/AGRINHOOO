@@ -34,6 +34,7 @@ header .logo {
 @keyframes moveToCenter {
     0% {
         left: 0;
+        transform: translateX(0);
     }
     100% {
         left: 50%;
